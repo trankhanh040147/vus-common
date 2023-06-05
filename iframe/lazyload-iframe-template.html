@@ -1,0 +1,39 @@
+<div id="__iframe-container">
+</div>
+
+<script>
+    // Lazy load iframe
+    jQuery(document).ready(function ($) {
+        function load_iframe($iframe_id, $iframe_container) {
+            // create an iframe
+            ifr = $('<iframe>');
+
+            // assign the src
+            ifr.attr("src", "https://www.youtube.com/embed/zY-qYbOqcQA");
+
+            //assign iframe id 
+            ifr.attr("id", $iframe_id);
+
+            // disable scrolling of the iframe
+            ifr.attr("scrolling", "no");
+
+            // lazy load the iframe
+            ifr.attr("loading", "lazy");
+
+            // Adjust the height of the iframe based on the height of the content
+            ifr.on("load", function () {
+                var iframeDoc = ifr[0].contentDocument || ifr[0].contentWindow.document;
+                var height = $(iframeDoc).height();
+                ifr.css({ "height": height + "px" });
+            });
+
+            // Set the width and height of the iframe to 100%
+            ifr.css({ "width": "100%", "height": "100%" });
+
+            // Add the iframe inside the section #__section-form
+            $($iframe_container).append(ifr);
+        }
+        
+        load_iframe('iframe_youtube','#__iframe-container')
+    })
+</script>
