@@ -9,7 +9,10 @@
             ifr = $('<iframe>');
 
             // assign the src
-            ifr.attr("src", "https://www.youtube.com/embed/zY-qYbOqcQA");
+            ifr.attr("src", "");
+
+            // assign the data-src
+            ifr.attr("data-src", "https://www.youtube.com/embed/zY-qYbOqcQA");
 
             //assign iframe id 
             ifr.attr("id", $iframe_id);
@@ -36,4 +39,8 @@
         
         load_iframe('iframe_youtube','#__iframe-container')
     })
+
+    // Defer Youtube embeded js
+    function init() { var vidDefer = document.getElementsByTagName('iframe'); for (var i=0; i<vidDefer.length; i++) { if(vidDefer[i].getAttribute('data-src')) { vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src')); } } } window.onload = init;
 </script>
+

@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<style>
+  /* @font-face {
+    font-family: 'Averta-Extra-Bold';
+    src: url('https://vus.edu.vn/chuong-trinh-hoc/wp-content/uploads/2023/05/Averta-ExtraBold.woff');
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Averta';
+    src: url('https://vus.edu.vn/chuong-trinh-hoc/wp-content/uploads/2023/04/Averta-Regular.woff');
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Averta';
+    src: url('https://vus.edu.vn/chuong-trinh-hoc/wp-content/uploads/2023/05/AvertaStdCY-Semibold.woff');
+    font-weight: 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Averta';
+    src: url('https://vus.edu.vn/chuong-trinh-hoc/wp-content/uploads/2023/04/AvertaStdCY-Bold.woff');
+    font-weight: 700;
+  } */
+
+  body {
+    font-family: "Averta", sans-serif !important;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+
+  .row>* {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .__title-banner {
+    bottom: 8%;
+  }
+
+  p {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+  }
+
+  div,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  span,
+  input {
+    font-family: "Averta", sans-serif !important;
+  }
+
+  .container-fluid {
+    max-width: unset !important;
+  }
+
+  .__container {
+    max-width: 1320px !important;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1450px) {
+    .__container {
+      max-width: 1120px !important;
+      margin: 0 auto;
+    }
+  }
+
+  .__text-banner {
+    padding-top: 2%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .__container {
+      max-width: 1000px !important;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    .__container {
+      padding: 0 23px !important;
+    }
+  }
+
+  @media screen and (max-width:991px) {
+    .__wrapper {
+      padding: 9.5px 0 !important;
+    }
+  }
+
+  .main-footer {
+    background-color: #b9131a;
+    padding-top: 15px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .title-list-footer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px !important;
+  }
+
+  .___sc_lis,
+  .___social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .___fb {
+    background: url(https://vus.edu.vn/wp-content/uploads/2021/09/fb-icon.svg);
+    background-size: contain;
+  }
+
+  .___yt {
+    background: url(https://vus.edu.vn/wp-content/uploads/2021/09/yt-icon.svg);
+    background-size: contain;
+  }
+
+  .___fb,
+  .___yt {
+    margin-left: 10px !important;
+    width: 22px;
+    height: 22px;
+    display: block;
+    margin: 0;
+  }
+
+  element.style {}
+
+  .___yt {
+    background: url(https://vus.edu.vn/wp-content/uploads/2021/09/yt-icon.svg);
+    background-size: contain;
+  }
+
+  .item-footer {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .list-footer {
+    color: #ffffff;
+    gap: 10px;
+  }
+
+  .sub-footer {
+    background-color: #770005;
+    padding: 25px 0 20px 0;
+  }
+
+  .subfooter-text {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    line-height: 18px;
+  }
+
+  .logo-footer {
+    width: 106px;
+  }
+
+  ._icon-footer {
+    max-width: 169px;
+  }
+
+  .__hotline-content>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hotline-area {
+    background: #FFF2F2;
+    border-radius: 10px 10px 0 0;
+    line-height: 15px !important;
+    font-size: 12px;
+    font-weight: 600;
+    color: #3D3D3D;
+    font-family: Averta !important;
+    height: 40px;
+  }
+
+  .hotline-number a {
+    font-family: 'Averta' !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #B9131A;
+  }
+
+  .__hotline-content>div.hotline-number {
+    justify-content: flex-start;
+  }
+
+  img.hotline-number-icon {
+    width: 27px;
+    margin: 0 15px;
+  }
+
+  .hotline-number a {
+    font-family: 'Averta' !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #B9131A;
+  }
+
+  .__hotline-content {
+    display: none;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    box-shadow: 0px 20px 60px -20px #00000040;
+    left: 4%;
+    top: 43%;
+    min-width: 205px;
+    z-index: 9999999;
+  }
+
+  .hotline-number {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 60px -20px #00000040;
+    height: 40px;
+  }
+
+  .___hotline-box {
+    background: #FFF0F0;
+    border-radius: 15px;
+    border: unset;
+    padding: 3px 7px;
+    width: 220px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #B9131A;
+  }
+
+  .__hotline-phone-icon {
+    margin-right: 10px;
+  }
+
+  .___hotline-box:after {
+    /* font-family: 'Glyphicons Halflings'; */
+    /* content: "\e114"; */
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(https://vus.edu.vn/wp-content/uploads/2023/05/hotline-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #B9131A;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: all 0.5s;
+  }
+
+  .___mini_header {
+    width: 100%;
+    background: #E3ECF8;
+    padding: 10px 0;
+  }
+
+  .___right_mini_menu {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    color: #222222;
+  }
+
+  .___login {
+    position: relative;
+    margin-right: 40px;
+  }
+
+  .___login:after {
+    background: #8E8E8E;
+    content: "";
+    width: 1px;
+    height: 16px;
+    position: absolute;
+    right: -20px;
+    bottom: 3px;
+  }
+
+  .___login a {
+    color: #0A4EBF;
+    font-size: 13px !important;
+  }
+
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+
+  .___sc_lis,
+  .___social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .___title {
+    font-size: 13px !important;
+  }
+
+  .___sc_lis,
+  .___social {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+
+
+
+
+
+  a {
+    color: #ab005e;
+  }
+
+  @media screen and (max-width: 767px) {
+    #__formTV .__container {
+      padding: 0 !important;
+    }
+
+    .button-link::after {
+      bottom: 5px;
+    }
+
+    .__hotline-content {
+      scale: 0.8;
+      top: 46%;
+      left: 20px;
+      right: unset;
+    }
+
+    .___hotline-box {
+      scale: 0.8;
+    }
+
+    .___login,
+    .___social .___title {
+      display: none;
+    }
+
+    .___mini_header .col-sm-8 {
+      width: 75%;
+    }
+
+    .___mini_header .col-sm-4 {
+      width: 25%;
+    }
+  }
+
+  .app-header__content #menu-top-menu li a {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #002e6e;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  #menu-top-menu li a:hover,
+  #menu-top-menu li.current-menu-item a {
+    color: #ba141a;
+  }
+
+  #menu-top-menu>li {
+    position: relative;
+    padding: 19px 10px;
+  }
+
+  #menu-top-menu>li:hover>ul.sub-menu {
+    top: 60px;
+  }
+
+  #menu-top-menu>li:hover ul.sub-menu {
+    display: block;
+    position: absolute;
+    background: #fff;
+    padding: 0;
+    left: -4px;
+    min-width: 230px;
+    box-shadow: 0px 0px 11px #ddd;
+    -moz-box-shadow: 0px 0px 11px #ddd;
+    -webkit-box-shadow: 0px 0px 11px #ddd;
+    -ms-box-shadow: 0px 0px 11px #ddd;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+  }
+
+  #menu-top-menu>li>ul.sub-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 230px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    z-index: 99;
+  }
+
+  #menu-top-menu>li ul.sub-menu li ul {
+    position: absolute;
+    left: 100%;
+    background: #fff;
+    min-width: 230px;
+    top: 0;
+    z-index: 99;
+    display: none !important;
+  }
+
+  @media screen and (max-width: 767px) {
+
+    #menu-top-menu>li ul.sub-menu li ul,
+    #menu-top-menu>li>ul.sub-menu {
+      display: block;
+    }
+  }
+
+  #menu-top-menu>li ul.sub-menu li:hover ul {
+    display: block !important;
+    position: absolute;
+    left: 100%;
+    margin: 0;
+  }
+
+  #menu-top-menu>li>ul.sub-menu li {
+    position: relative;
+    line-height: 1.3rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    padding-top: 18px;
+    padding-left: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 0 !important;
+  }
+
+  .__menu-mobile {
+    top: 50px;
+    width: 100%;
+    z-index: 10;
+    background-color: #FFFFFF;
+    padding-top: 20px !important;
+    height: 95vh;
+  }
+
+  .__menu-mobile ul li a {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #002e6e;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .__menu-mobile ul li {
+    padding: 6px 0;
+    list-style: none;
+  }
+
+  .__menu-mobile ul {
+    padding-left: 23px !important;
+  }
+
+  .__btn-phone {
+    background: linear-gradient(to right, #D8366F 30%, #F06128 100%);
+    width: 153px;
+    height: 38px;
+    border-radius: 75.92px;
+    align-items: center;
+    padding: 6px 14px 6px 6.5px;
+  }
+
+  .__title-phone {
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+
+  .__button-submit:hover {
+    opacity: 0.7;
+  }
+
+  .__link-button:hover {
+    opacity: 0.7;
+  }
+
+  .left-sticky {
+    position: fixed;
+    background: #00205b;
+    width: 60px;
+    z-index: 9999;
+    right: 0;
+    top: 30%;
+    min-height: 130px;
+    border-radius: 8px 0 0 8px;
+    -moz-border-radius: 8px 0 0 8px;
+    -webkit-border-radius: 8px 0 0 8px;
+    -ms-border-radius: 8px 0 0 8px;
+  }
+
+  footer.all ul {
+    margin: 0 !important;
+  }
+
+  .left-sticky ul {
+    padding: 10px;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  .left-sticky ul li {
+    position: relative;
+  }
+
+  .left-sticky ul li {
+    line-height: 1.2rem;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #686868;
+    min-height: 30px;
+  }
+
+  ul.desktop-sticky-bar-list li a {
+    font-size: 12px;
+  }
+
+  .left-sticky p,
+  .left-sticky h4,
+  .left-sticky a {
+    color: #fff;
+  }
+
+  .left-sticky ul li .ico-call .content {
+    display: none;
+  }
+
+  .left-sticky ul li .ico-call:hover .content {
+    display: block;
+    min-width: 260px;
+    position: absolute;
+    right: 43px;
+    background: #00205b;
+    top: 0;
+    text-align: left;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .left-sticky ul li .contact-detail .text {
+    color: hsla(0, 0%, 100%, .65);
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+
+  .left-sticky ul li .contact-phone a {
+    padding-left: 30px;
+  }
+
+  ul.desktop-sticky-bar-list li a {
+    font-size: 12px;
+  }
+
+  .left-sticky ul li .contact-detail .contact-phone::before {
+    content: "";
+    display: block;
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/images/icon-call.svg) no-repeat 0 0 / 68%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+
+  .left-sticky ul li .contact-detail {
+    padding-bottom: 18px;
+  }
+
+  .left-sticky ul li button {
+    background: unset;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+  }
+
+  .__stick-form {
+    background-color: #10338C;
+    padding: 14px 0 !important;
+    bottom: 0;
+    z-index: 10000;
+    box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.25);
+  }
+
+  .__text-stick {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0 !important;
+  }
+
+  @media screen and (max-width: 767px) {
+    .sub-footer {
+      padding: 25px 0 61px 0 !important;
+    }
+  }
+
+  .__header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: #FFFFFF;
+    width: 100%;
+  }
+
+  .__mt62px {
+    margin-top: 62px;
+  }
+</style>
+
+<body>
+  <section class="__header ">
+    <div class="___mini_header ">
+      <div class="__container">
+        <div class="row">
+          <div class="col-md-6 col-sm-8">
+            <button class="position-relative ___hotline-box">
+              <img data-src="https://vus.edu.vn/wp-content/uploads/2023/05/hotline-phone.svg"
+                class="__hotline-phone-icon __shake-animation lazyloaded"
+                src="https://vus.edu.vn/wp-content/uploads/2023/05/hotline-phone.svg" loading="lazy">
+              Bạn cần hỗ trợ nhanh?
+            </button>
+            <div class="position-absolute __hotline-content">
+              <div class="hotline-area">Hotline Miền Bắc</div>
+              <div class="hotline-number">
+                <img data-src="https://vus.edu.vn/wp-content/uploads/2023/05/hotline-phone-number.png"
+                  class="hotline-number-icon __shake-animation lazyloaded"
+                  src="https://vus.edu.vn/wp-content/uploads/2023/05/hotline-phone-number.png" loading="lazy">
+                <a href="tel:088 867 1155"> 088 867 1155 </a>
+              </div>
+              <div class="hotline-area">Hotline Miền Nam/Miền Trung</div>
+              <div class="hotline-number">
+                <img data-src="https://vus.edu.vn/wp-content/uploads/2023/05/hotline-phone-number.png"
+                  class="hotline-number-icon __shake-animation lazyloaded"
+                  src="https://vus.edu.vn/wp-content/uploads/2023/05/hotline-phone-number.png" loading="lazy">
+                <a href="tel:(028) 7308 3333"> (028) 7308 3333 </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-4">
+            <div class="___right_mini_menu">
+              <div class="___login">
+                <a href="https://student.vus.edu.vn/dang-nhap.html" target="_blank" rel="noopener">Học viên đăng
+                  nhập</a>
+              </div>
+              <div class="___social">
+                <span class="___title">Theo dõi VUS</span>
+                <div class="___sc_lis">
+                  <a class="___fb" href="https://www.facebook.com/pg/AnhvanhoiVietMy.VUS/about/"></a>
+                  <a class="___yt" href="https://www.youtube.com/channel/UCfUWwTaz_1Ticrno2ogXGUw"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="__container">
+      <div class="row d-flex justify-content-center position-relative">
+        <div class="__wrapper ">
+          <div class="col-12 d-flex justify-content-between ">
+            <div class="col-lg-2 col-6 d-flex justify-content-start"><img
+                src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/LXP_Media/VUS-MKT/YL/logo.webp"
+                alt="" class="__img-logo my-auto"></div>
+            <div class="col-lg-10 d-flex justify-content-end">
+              <!-- <div class="app-header__menu">
+                  <span>
+                    <button type="button" class="btn-icon btn-icon-only btn-sm mobile-toggle-header-nav">
+                      <span class="btn-icon-wrapper">
+                        <i class="fas fa-bars"></i>
+                      </span>
+                    </button>
+                  </span>
+                </div> -->
+              <div class="d-flex  d-lg-none me-3 my-auto">
+                <button class="navbar-toggler __btn-menu collapsed   __btn-collapse d-flex" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#__menu-mob" aria-controls="navbarNav" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <img
+                    src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/LXP_Media/skins/form_payment/menu.svg"
+                    alt="" class="icon icon-menu my-auto">
+                </button>
+              </div>
+              <div class="app-header__content">
+                <div class="app-header-right d-flex justify-content-end">
+                  <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="">
+                      <ul id="menu-top-menu" class="navbar-nav mr-auto d-flex">
+                        <li id="menu-item-4564"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4564"><a
+                            href="https://english.vus.edu.vn/chuong-trinh-hoc.html">Tư vấn khóa học</a></li>
+                        <li id="menu-item-7353"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7353">
+                          <a href="https://english.vus.edu.vn/chuong-trinh-hoc.html">Các khóa học</a>
+                          <ul class="sub-menu">
+                            <li id="menu-item-11486"
+                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11486">
+                              <a href="#">Tiếng Anh Trẻ Em</a>
+                              <ul class="sub-menu">
+                                <li id="menu-item-11491"
+                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11491"><a
+                                    href="https://vus.edu.vn/smartkids-cho-tre-4-6-tuoi/">Tiếng Anh Cho trẻ 4-6
+                                    tuổi</a></li>
+                                <li id="menu-item-11492"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11492"><a
+                                    href="https://english.vus.edu.vn/superkids.html">Tiếng Anh Cho Bé 6-11 Tuổi</a>
+                                </li>
+                                <li id="menu-item-11493"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11493"><a
+                                    href="https://english.vus.edu.vn/young-leaders.html">Tiếng Anh cho học viên 11-15
+                                    tuổi</a></li>
+                              </ul>
+                            </li>
+                            <li id="menu-item-11487"
+                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11487"><a
+                                href="https://english.vus.edu.vn/english-hub.html">Anh Ngữ Tương Tác</a></li>
+                            <li id="menu-item-11488"
+                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11488">
+                              <a href="https://italk.vus.edu.vn/">Tiếng Anh Công Sở</a>
+                              <ul class="sub-menu">
+                                <li id="menu-item-11494"
+                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11494"><a
+                                    href="https://vus.edu.vn/chuong-trinh-tieng-anh-danh-cho-doanh-nghiep/">Tiếng Anh
+                                    Dành Cho Doanh Nghiệp</a></li>
+                              </ul>
+                            </li>
+                            <li id="menu-item-11489"
+                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11489"><a
+                                href="https://english.vus.edu.vn/ielts.html">Luyện Thi IETLS</a></li>
+                            <li id="menu-item-11490"
+                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11490">
+                              <a href="#">Công Nghệ Số</a>
+                              <ul class="sub-menu">
+                                <li id="menu-item-11495"
+                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11495"><a
+                                    href="https://vus.edu.vn/digiconnect/">DIGIconnect – Lâp trình tích hợp kỹ năng
+                                    4.0 cho học sinh cấp 2</a></li>
+                                <li id="menu-item-11496"
+                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11496"><a
+                                    href="https://vus.edu.vn/digidation/">DIGIdation – Chương trình công nghệ số sáng
+                                    tạo dành cho trẻ em</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li id="menu-item-1789"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1789"><a
+                            href="https://vus.edu.vn/co-so-vus/">Cơ sở VUS</a></li>
+                        <li id="menu-item-6361"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6361">
+                          <a href="#">Cơ hội nghề nghiệp</a>
+                          <ul class="sub-menu">
+                            <li id="menu-item-6362"
+                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6362"><a
+                                target="_blank" rel="noopener" href="https://teachenglish.vus.edu.vn">Teaching
+                                jobs</a></li>
+                            <li id="menu-item-6363"
+                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6363"><a
+                                target="_blank" rel="noopener" href="https://tuyendung.vus.edu.vn">Tuyển dụng nhân
+                                viên</a></li>
+                          </ul>
+                        </li>
+                        <li id="menu-item-2957"
+                          class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2957"><a
+                            href="https://vus.edu.vn/ban-tin/">Bản tin</a></li>
+                        <li id="menu-item-11423"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11423"><a
+                            href="https://vus.edu.vn/blog">Blog</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- menu mobile -->
+        <div class="position-absolute __menu-mobile collapse" id="__menu-mob">
+          <ul class=" d-flex flex-column">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4564"><a
+                href="https://english.vus.edu.vn/chuong-trinh-hoc.html">Tư vấn khóa học</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7353">
+              <a href="https://english.vus.edu.vn/chuong-trinh-hoc.html">Các khóa học</a>
+              <ul class="sub-menu">
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11486">
+                  <a href="#">Tiếng Anh Trẻ Em</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11491"><a
+                        href="https://vus.edu.vn/smartkids-cho-tre-4-6-tuoi/">Tiếng Anh Cho trẻ 4-6
+                        tuổi</a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11492"><a
+                        href="https://english.vus.edu.vn/superkids.html">Tiếng Anh Cho Bé 6-11 Tuổi</a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11493"><a
+                        href="https://english.vus.edu.vn/young-leaders.html">Tiếng Anh cho học viên 11-15
+                        tuổi</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11487"><a
+                    href="https://english.vus.edu.vn/english-hub.html">Anh Ngữ Tương Tác</a></li>
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11488">
+                  <a href="https://italk.vus.edu.vn/">Tiếng Anh Công Sở</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11494"><a
+                        href="https://vus.edu.vn/chuong-trinh-tieng-anh-danh-cho-doanh-nghiep/">Tiếng Anh
+                        Dành Cho Doanh Nghiệp</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11489"><a
+                    href="https://english.vus.edu.vn/ielts.html">Luyện Thi IETLS</a></li>
+                <li
+                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11490">
+                  <a href="#">Công Nghệ Số</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11495"><a
+                        href="https://vus.edu.vn/digiconnect/">DIGIconnect – Lâp trình tích hợp kỹ năng
+                        4.0 cho học sinh cấp 2</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11496"><a
+                        href="https://vus.edu.vn/digidation/">DIGIdation – Chương trình công nghệ số sáng
+                        tạo dành cho trẻ em</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1789"><a
+                href="https://vus.edu.vn/co-so-vus/">Cơ sở VUS</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6361">
+              <a href="#">Cơ hội nghề nghiệp</a>
+              <ul class="sub-menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6362"><a target="_blank"
+                    rel="noopener" href="https://teachenglish.vus.edu.vn">Teaching
+                    jobs</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6363"><a target="_blank"
+                    rel="noopener" href="https://tuyendung.vus.edu.vn">Tuyển dụng nhân
+                    viên</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2957"><a
+                href="https://vus.edu.vn/ban-tin/">Bản tin</a></li>
+            <li id="" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11423"><a
+                href="https://vus.edu.vn/blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section>
+    <footer>
+      <div class="main-footer">
+        <div class="__container">
+          <div class="row">
+            <div class="col-12 col-md-2 col-lg-3 ">
+              <div class="list-footer d-flex flex-column pe-2">
+                <p class="title-list-footer">VỀ VUS</p>
+                <a href="https://vus.edu.vn/gioi-thieu-ve-vus/" class="item-footer">Giới thiệu về VUS</a>
+                <a href="https://vus.edu.vn/chuan-dao-tao-quoc-te/" class="item-footer">Chuẩn đào tạo quốc
+                  tế</a>
+                <a href="https://vus.edu.vn/doi-ngu-giang-day/" class="item-footer">Đội ngũ giảng dạy</a>
+                <a href="https://vus.edu.vn/co-so-vus/" class="item-footer">Trung tâm đào tạo</a>
+                <a href="https://tuyendung.vus.edu.vn/" class="item-footer">Cơ hội nghề nghiệp</a>
+                <a href="https://teachenglish.vus.edu.vn/" class="item-footer">Teaching At VUS</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 pe-2">
+              <div class="list-footer d-flex flex-column">
+                <p class="title-list-footer">KHÓA HỌC TIẾNG ANH</p>
+                <a href="https://vus.edu.vn/chuong-trinh-hoc/" class="item-footer">Các khoá học tiếng anh tại
+                  VUS</a>
+                <a href="https://vus.edu.vn/smartkids-cho-tre-4-6-tuoi" class="item-footer">Tiếng Anh trẻ em
+                  4 -6 tuổi</a>
+                <a href="https://english.vus.edu.vn/superkids.html" class="item-footer">Tiếng Anh trẻ em 6 -
+                  11 tuổi</a>
+                <a href="https://english.vus.edu.vn/young-leaders.html" class="item-footer">Tiếng Anh cho
+                  Teen 11 - 15 tuổi</a>
+                <a href="https://italk.vus.edu.vn/" class="item-footer">Tiếng Anh cho sinh viên &amp; Người đi
+                  làm</a>
+                <a href="https://vus.edu.vn/luyen-thi-ielts/" class="item-footer">Luyện thi IELTS</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="list-footer d-flex flex-column">
+                <p class="title-list-footer">THÔNG TIN</p>
+                <a href="https://vus.edu.vn/thong-tin-nha-truong/" class="item-footer">Thông tin nhà
+                  trường</a>
+                <a href="https://vus.edu.vn/chinh-sach-bao-mat/" class="item-footer">Chính sách bảo mật</a>
+                <a href="" class="item-footer">Chính sách liên kết</a>
+                <a href="https://vus.edu.vn/dieu-khoan-su-dung/" class="item-footer">Điều khoản sử dụng</a>
+                <a href="https://vus.edu.vn/thanh-toan-tra-gop-0-lai-suat/" class="item-footer">Thanh toán
+                  trả góp 0% lãi xuất</a>
+                <a href="" class="item-footer">Thanh toán học phí VUS</a>
+                <a href="" class="item-footer">Giới thiệu học viên mới</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="list-footer d-flex flex-column">
+                <p class="title-list-footer">TẢI ỨNG DỤNG</p>
+                <div class=" h-100 col-12"><a href=""> <img
+                      src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/LXP_Media/VUS-MKT/K12/notice.png"
+                      alt="" class="__mt-98 w-100 _icon-footer "></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="__container">
+          <div class="row">
+            <div class="col-12 col-md-2">
+              <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=37479">
+                <img
+                  src="https://hcm01.vstorage.vngcloud.vn/v1/AUTH_77c1e15122904b63990a9da99711590d/LXP_Media/VUS-MKT/K12/logo-white.png"
+                  class="logo-footer mb-3 mb-md-0 " alt="">
+              </a>
+            </div>
+            <div class="col-12 col-md-10">
+              <p class="subfooter-text">© CÔNG TY CỔ PHẦN QUỐC TẾ ANH VĂN HỘI VIỆT MỸ - Giấy chứng nhận doanh
+                nghiệp số: 0313548147,
+                Ngày cấp giấy phép: 24/11/2015, Nơi cấp: SKHDT TP.HCM Trụ Sở Chính Tại 189 Nguyễn Thị Minh
+                Khai, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh , Điện thoại: 028 3925 9899
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+
+</html>
