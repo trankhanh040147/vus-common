@@ -1,107 +1,133 @@
 <style>
-    body {
-      font-family: "Averta", sans-serif !important;
-      font-weight: 400;
-      overflow-x: hidden;
-    }
+  body {
+    font-family: "Averta", sans-serif !important;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+
+  .__bg-gif {
+    width: 80%;
+  }
+
+  .__input {
+    border-radius: 10px;
+    padding: 12.5px 0 12.5px 26px !important;
+    background-color: #061ACE !important;
+    margin-bottom: 17px !important;
+    border: 0 !important;
+    outline: none !important;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .dec-form {
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 0 26px;
+    margin-bottom: 25px !important;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .__btn-banner {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    top: 0;
+    padding: 18px 35px;
+  }
+
+  .__btn-banner-text {
+    font-size: 16px;
+    line-height: 20px !important;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+
+  @media screen and (max-width: 767px) {
     .__bg-gif {
-      width: 80%;
+      width: 100%;
+      margin-bottom: 30px;
     }
-    .__input {
-      border-radius: 10px;
-      padding: 12.5px 0 12.5px 26px !important;
-      background-color: #061ACE !important;
-      margin-bottom: 17px !important;
-      border: 0 !important;
-      outline: none !important;
-      color: #FFFFFF !important;
-      font-size: 16px;
-      font-weight: 600;
-    }
-    .dec-form {
-      color: #FFFFFF;
-      font-size: 13px;
-      padding: 0 26px;
-      margin-bottom: 25px !important;
-    }
-    a {
-      text-decoration: none;
-    }
-    .__btn-banner {
-      outline: none;
-      border: none;
-      background-color: transparent;
-      top: 0;
-      padding: 18px 35px;
-    }
-    .__btn-banner-text {
-      font-size: 16px;
-      line-height: 20px !important;
-      font-weight: 700;
-      color: #FFFFFF;
-    }
-    @media screen and (max-width: 767px) {
-      .__bg-gif {
-        width: 100%;
-        margin-bottom: 30px;
-      }
-    }
-    .__input::placeholder {
-      color: #FFFFFF;
-    }
-    .__review-address {
-      background-image: url(https://vus.edu.vn/wp-content/uploads/2023/05/bg-digi-camp.webp);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: 100% bottom;
-    }
-    span.wpcf7-not-valid-tip {
-            border: none !important;
-            height: auto;
-            padding: 0 !important;
-            padding-top: 0px;
-            margin: 0 !important;
-            text-align: left;
-            font-size: 12px;
-            color: red !important;
-            padding-top: 3px !important;
-            padding-left: 0px !important;
-            transition: all 300ms ease 0ms;
-    }
-  </style>
-      <div class="col-12 __box-form d-flex flex-column flex-md-row">
-        <div class="col-md-6 col-12 position-relative">
-          <img src="https://vus.edu.vn/wp-content/uploads/2023/05/bg-gif.webp" alt="" class="__bg-gif">
+  }
+
+  .__input::placeholder {
+    color: #FFFFFF;
+  }
+
+  .__review-address {
+    background-image: url(https://vus.edu.vn/wp-content/uploads/2023/05/bg-digi-camp.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% bottom;
+  }
+
+  span.wpcf7-not-valid-tip {
+    border: none !important;
+    height: auto;
+    padding: 0 !important;
+    padding-top: 0px;
+    margin: 0 !important;
+    text-align: left;
+    font-size: 12px;
+    color: red !important;
+    padding-top: 3px !important;
+    padding-left: 0px !important;
+    transition: all 300ms ease 0ms;
+  }
+</style>
+<div class="col-12 __box-form d-flex flex-column flex-md-row">
+  <div class="col-md-6 col-12 position-relative">
+    <img src="https://vus.edu.vn/wp-content/uploads/2023/05/bg-gif.webp" alt="" class="__bg-gif">
+  </div>
+  <div class="col-md-6 col-12">
+    <div action="" class="w-100 d-flex flex-column mt-3">
+      <input type="text" name="Your-name" class="__input form-control __form_data __required __frm_name"
+        placeholder="Họ tên học viên: (*)"><span class="wpcf7-not-valid-tip __alert_name" aria-hidden="true">Dữ liệu
+        không được để trống.</span> <input type="text" name="Your-phone"
+        class="__input form-control __form_data __required __frm_phone" placeholder="SĐT: (*)"><span
+        class="wpcf7-not-valid-tip __alert_phone " aria-hidden="true">Dữ liệu không được để trống.</span><span
+        class="wpcf7-not-valid-tip __invalid_phone" aria-hidden="true">Số điện thoại vui lòng bắt đầu bằng số 0; không
+        chứa dấu cách và kí tự đặc biệt.</span> <input type="text" name="Your-age"
+        class="__input form-control __form_data __required __frm_age" placeholder="Độ tuổi học viên: (*)"><span
+        class="wpcf7-not-valid-tip __alert_age" aria-hidden="true">Dữ liệu không được để trống.</span> <input
+        type="text" name="Your-area" class="__input form-control __form_data __required __frm_area"
+        placeholder="Khu vực sinh sống:"> <input type="text" name="Your-quest"
+        class="__input form-control __form_data __required __frm_quest" placeholder="Câu hỏi về chương trình:"> <input
+        type="text" name="Note" hidden class="__form_data __frm_note">
+      <p class="dec-form">Bằng việc đăng ký thông tin, bạn đồng ý cho phép VUS liên lạc thông qua các hình thức: cuộc
+        gọi, tin nhắn, email nhằm mục đích tư vấn chương trình &amp; nghiên cứu thị trường.</p>
+      <div style="height: 0;display: block;">
+        <input type="hidden" name="crmSource" id="crmSource" value="D097BD53-32A7-4830-8029-E61581EB1029">
+        <input type="hidden" name="coreedu_Source" id="coreedu_Source" value="LS-000000001002">
+        <input type="hidden" name="crmCampaign" id="crmCampaign" value="768A9859-6C3C-40DA-82FB-1CBD66E53853">
+        <input type="hidden" name="coreedu_Campaign" id="coreedu_Campaign" value="CP-2023007">
+        <input type="hidden" name="crmCampaignDetail" id="crmCampaignDetail"
+          value="36F18309-BB9E-4E76-AC5C-8FF16F8DC12D">
+        <input type="hidden" name="coreedu_CampaignDetail" id="coreedu_CampaignDetail" value="CPD-000000009802">
+        <input type="hidden" name="crmConsultantType" id="crmConsultantType" value="3">
+        <input type="hidden" name="coreedu_ConsultantType" id="coreedu_ConsultantType" value="3">
+        <input type="hidden" name="coreedu_OriginalProgram" id="coreedu_OriginalProgram" value="Dcamp">
+        <input type="hidden" name="coreedu_OriginalProgramCategory" id="coreedu_OriginalProgramCategory" value="DIGI">
+        <input type="hidden" name="City" id="__frm_city" class="__form_data __frm_city wpcf7-form-control" value="79"
+          data-city="HCM">
+      </div>
+      [current_url]
+      [hidden utm_source default:get]
+      [hidden utm_medium default:get]
+      [hidden utm_campaign default:get]
+      [hidden gclid default:get]
+      [hidden mod_log default:get]
+      <div class="d-flex justify-content-center">
+        <div class="position-relative">
+          <img src="https://vus.edu.vn/wp-content/uploads/2023/05/bg-button-banner.webp" alt="">
+          <input type="submit" class="__btn-banner d-flex position-absolute __btn-banner-text" value="ĐĂNG KÍ TƯ VẤN">
+          <img src="https://vus.edu.vn/wp-content/uploads/2023/05/arrow-btn.png" alt=""
+            class="my-auto ms-3 position-absolute" style="right: 38px;top: 21px;">
         </div>
-        <div class="col-md-6 col-12">
-          <div action="" class="w-100 d-flex flex-column mt-3">
-            <input type="text" name="Your-name" class="__input form-control __form_data __required __frm_name" placeholder="Họ tên học viên: (*)"><span class="wpcf7-not-valid-tip __alert_name" aria-hidden="true">Dữ liệu không được để trống.</span>     <input type="text" name="Your-phone" class="__input form-control __form_data __required __frm_phone" placeholder="SĐT: (*)"><span class="wpcf7-not-valid-tip __alert_phone " aria-hidden="true">Dữ liệu không được để trống.</span><span class="wpcf7-not-valid-tip __invalid_phone" aria-hidden="true">Số điện thoại vui lòng bắt đầu bằng số 0; không chứa dấu cách và kí tự đặc biệt.</span>      <input type="text" name="Your-age" class="__input form-control __form_data __required __frm_age" placeholder="Độ tuổi học viên: (*)"><span class="wpcf7-not-valid-tip __alert_age" aria-hidden="true">Dữ liệu không được để trống.</span>     <input type="text" name="Your-area" class="__input form-control __form_data __required __frm_area" placeholder="Khu vực sinh sống:">     <input type="text" name="Your-quest" class="__input form-control __form_data __required __frm_quest" placeholder="Câu hỏi về chương trình:">                            <input type="text" name="Note" hidden class="__form_data __frm_note">
-            <p class="dec-form">Bằng việc đăng ký thông tin, bạn đồng ý cho phép VUS liên lạc thông qua các hình thức: cuộc gọi, tin nhắn, email nhằm mục đích tư vấn chương trình &amp; nghiên cứu thị trường.</p>
-            <div style="height: 0;display: block;">
-                <input type="hidden" name="crmSource" id="crmSource" value="D097BD53-32A7-4830-8029-E61581EB1029">
-                <input type="hidden" name="coreedu_Source" id="coreedu_Source" value="LS-000000001002">
-                <input type="hidden" name="crmCampaign" id="crmCampaign" value="768A9859-6C3C-40DA-82FB-1CBD66E53853">
-                <input type="hidden" name="coreedu_Campaign" id="coreedu_Campaign" value="CP-2023007">
-                <input type="hidden" name="crmCampaignDetail" id="crmCampaignDetail" value="36F18309-BB9E-4E76-AC5C-8FF16F8DC12D">
-                <input type="hidden" name="coreedu_CampaignDetail" id="coreedu_CampaignDetail" value="CPD-000000009802">
-                <input type="hidden" name="crmConsultantType" id="crmConsultantType" value="3">
-                <input type="hidden" name="coreedu_ConsultantType" id="coreedu_ConsultantType" value="3">
-                <input type="hidden" name="coreedu_OriginalProgram" id="coreedu_OriginalProgram" value="Dcamp">
-                <input type="hidden" name="coreedu_OriginalProgramCategory" id="coreedu_OriginalProgramCategory" value="DIGI">
-                <input type="hidden" name="City" id="__frm_city" class="__form_data __frm_city wpcf7-form-control" value="79" data-city="HCM">
-            </div>
-            [current_url]
-            [hidden utm_source default:get]
-            [hidden utm_medium default:get]
-            [hidden utm_campaign default:get]
-            [hidden gclid default:get]
-            [hidden mod_log default:get]
-            <div class="d-flex justify-content-center">
-              <div class="position-relative">
-                <img src="https://vus.edu.vn/wp-content/uploads/2023/05/bg-button-banner.webp" alt="">
-                <input type="submit" class="__btn-banner d-flex position-absolute __btn-banner-text" value="ĐĂNG KÍ TƯ VẤN">
-                     <img src="https://vus.edu.vn/wp-content/uploads/2023/05/arrow-btn.png" alt="" class="my-auto ms-3 position-absolute" style="right: 38px;top: 21px;">
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
