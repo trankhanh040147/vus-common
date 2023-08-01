@@ -1,0 +1,240 @@
+<style>
+  .top-0{
+  top:0 !important;
+  }
+      p {
+        margin-bottom: 0 !important;
+      }
+      .row>* {
+        padding: 0 !important;
+      }
+      .container-fluid {
+        max-width: unset !important;
+        padding: 0 !important;
+      }
+      .__container {
+  
+        width: 100%;
+        max-width: 1320px !important;
+        margin: 0 auto;
+      }
+      .box-form {
+        margin-top: 13px;
+        background: linear-gradient(180deg, #D8F2FF 0%, #FFF9FB 100%);
+        width: 85%;
+      }
+      @media screen and (max-width: 1450px) {
+        .__container {
+          max-width: 1120px !important;
+          margin: 0 auto;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        .__container {
+          max-width: 1000px !important;
+          margin: 0 auto;
+        }
+      }
+      @media screen and (max-width: 1020px) {
+        .__container {
+          padding: 0 23px !important;
+        }
+      }
+      @media screen and (max-width:767px) {
+        .box-form {
+          width: 100%;
+        }
+        .__row-gap-form {
+          row-gap: 35px;
+        }
+      }
+      .__form-submit {
+        overflow: hidden;
+        background-image: url(https://vus.edu.vn/digi/wp-content/uploads/2023/07/bg-form-digi.webp);
+        background-size: 200% 100%;
+        padding: 50px 0 120px 0;
+      }
+      .__img-form {
+        max-width: 501px;
+      }
+      .__box-plane-form {
+        width: max-content;
+        height: max-content !important;
+        margin-bottom: -30px;
+        animation: __avatar-form 15s linear infinite;
+      }
+      @keyframes __avatar-form {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes __avatar-form-mob {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(45%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @media screen and (max-width:767px) {
+        .__box-plane-form {
+          animation: __avatar-form-mob 15s linear infinite !important;
+        }
+      }
+      .__avatar-form {
+        position: relative;
+        z-index: 3;
+        animation: float 3s linear infinite;
+      }
+      @keyframes float {
+        0% {
+          top: 0;
+          transform: rotate(0);
+        }
+        50% {
+          top: -10px;
+          transform: rotate(2deg);
+        }
+        100% {
+          top: 0px;
+          transform: rotate(0);
+        }
+      }
+      .__form-submit .text-box {
+        margin: -13px 20px 0 20px !important;
+        padding: 18px 20px 30px 20px;
+        background-image: url(https://vus.edu.vn/digi/wp-content/uploads/2023/07/bg-dec-form.webp);
+        background-size: 100% 100%;
+      }
+      .__title-form {
+        color: #FFF;
+        font-size: clamp(18px, 2.3vw, 28px);
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 6px !important;
+      }
+      .__dec-form {
+        color: #0FF;
+        text-align: center;
+        font-size: clamp(11px, 1vw, 14px);
+      }
+      .box-form .__form12 {
+        padding: 0 45px 21px 45px;
+      }
+      .__input {
+        background-color: transparent !important;
+        padding: 0 0 16px 30px !important;
+        border: none !important;
+        position: relative;
+        outline: none !important;
+        margin-bottom:32px !important;
+      }
+      .__group-input::after {
+        content: "";
+        width: 100%;
+        border: 1px #52E5FF solid;
+        position: absolute;
+        bottom: 41px;
+      }
+      .__btn-submit {
+        padding: 14px 27px;
+        background: linear-gradient(90deg, #0FF 0%, #6248E0 50.69%, #FF1486 100%);
+        border: 0;
+        box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.25), 0px -2px 10px 0px rgba(0, 0, 0, 0.15) inset;
+      }
+      .__text-btn-submit {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      span.wpcf7-not-valid-tip {
+        border: none !important;
+        height: auto;
+        padding: 0 !important;
+        padding-top: 0px;
+        margin: 0 !important;
+        text-align: left;
+        font-size: 12px;
+        color: red !important;
+        padding-top: 3px !important;
+        padding-left: 0px !important;
+        transition: all 300ms ease 0ms;
+      }
+    </style>
+    <section class="__form-submit" id="__form-submit-digi">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="__container">
+            <div class="col-12 d-flex flex-column flex-md-row __row-gap-form">
+              <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                <div class="w-100 __img-form">
+                  <div class="__box-plane-form">
+                    <img src="https://vus.edu.vn/digi/wp-content/uploads/2023/07/img-avatar-form.webp" alt=""class="__avatar-form w-100">
+                  </div>
+                  <img src="https://vus.edu.vn/digi/wp-content/uploads/2023/07/img-scholarship.webp " class="w-100"alt="">
+                </div>
+              </div>
+              <div class="col-md-6 col-12  d-flex justify-content-end flex-column  align-items-end">
+                <div class="box-form">
+                  <div class="text-box d-flex flex-column">
+                    <p class="__title-form">đăng kí tư vấn miễn phí</p>
+                    <p class="__dec-form mx-auto">Bằng việc đăng ký thông tin, bạn đồng ý cho phép VUS liên lạc thông qua các hình thức: cuộc gọi, tin nhắn, email nhằm mục đích tư vấn các chương trình học.
+                    </p>
+                  </div>
+                  <div action="" class="d-flex flex-column mt-4 __form12">
+                    <div class="position-relative __group-input">
+                      [text Your-name class:__form_data class:__required class:__frm_name class:form-control  class:__input  placeholder "Tên học viên"]<span class="wpcf7-not-valid-tip __alert_name" aria-hidden="true">Dữ liệu không được để trống.</span>
+          <img src="https://vus.edu.vn/digi/wp-content/uploads/2023/07/icon-input1.svg" class="position-absolute top-0" alt="">
+                    </div>
+                    <div class="position-relative __group-input">
+                      [text Your-name class:__form_data class:__required class:__frm_age class:form-control  class:__input  placeholder "Độ tuổi học viên"]<span class="wpcf7-not-valid-tip __alert_age" aria-hidden="true">Dữ liệu không được để trống.</span>
+           <img src="https://vus.edu.vn/digi/wp-content/uploads/2023/07/icon-input2.svg"class="position-absolute top-0" alt="">
+                    </div>
+                    <div class="position-relative __group-input">
+                      [text Your-name class:__form_data class:__required class:__frm_phone class:form-control  class:__input  placeholder "Số điện thoại liên hệ"]<span class="wpcf7-not-valid-tip __alert_phone " aria-hidden="true">Dữ liệu không được để trống.</span><span class="wpcf7-not-valid-tip __invalid_phone" aria-hidden="true">Số điện thoại vui lòng bắt đầu bằng số 0; không chứa dấu cách và kí tự đặc biệt.</span>
+           <img src="https://vus.edu.vn/digi/wp-content/uploads/2023/07/icon-input3.svg"class="position-absolute top-0" alt="">
+                    </div>
+                    <div class="position-relative __group-input">
+         [text Your-name class:__form_data  class:__frm_quest class:form-control  class:__input  placeholder "Câu hỏi (nếu có)"]
+           <img src="https://vus.edu.vn/digi/wp-content/uploads/2023/07/icon-input4.svg"class="position-absolute top-0" alt="">
+                    </div>
+                    <input type="text" name="Note" hidden class="__form_data __frm_note">
+                    <div style="height: 0;display: block;">
+                      <input type="hidden" name="crmSource" id="crmSource" value="D097BD53-32A7-4830-8029-E61581EB1029">
+                      <input type="hidden" name="coreedu_Source" id="coreedu_Source" value="LS-000000001002">
+                      <input type="hidden" name="crmCampaign" id="crmCampaign" value="768A9859-6C3C-40DA-82FB-1CBD66E53853">
+                      <input type="hidden" name="coreedu_Campaign" id="coreedu_Campaign" value="CP-2023007">
+             <input type="hidden" name="crmCampaignDetail" id="crmCampaignDetail" value="36F18309-BB9E-4E76-AC5C-8FF16F8DC12D">
+                      <input type="hidden" name="coreedu_CampaignDetail" id="coreedu_CampaignDetail" value="CPD-000000009802">
+                      <input type="hidden" name="crmConsultantType" id="crmConsultantType" value="3">
+                      <input type="hidden" name="coreedu_ConsultantType" id="coreedu_ConsultantType" value="3">
+                      <input type="hidden" name="coreedu_OriginalProgram" id="coreedu_OriginalProgram" value="DC">
+                <input type="hidden" name="coreedu_OriginalProgramCategory" id="coreedu_OriginalProgramCategory" value="DIGI">
+  <input type="hidden" name="City" id="__frm_city" class="__form_data __frm_city wpcf7-form-control" value="74" data-city="HCM">
+                  </div>
+                  [current_url]
+                  [hidden utm_source default:get]
+                  [hidden utm_medium default:get]
+                  [hidden utm_campaign default:get]
+                  [hidden gclid default:get]
+                  [hidden mod_log default:get]
+                    <div class="d-flex"><input type="submit" class="__btn-submit mx-auto __text-btn-submit" value="GỬI THÔNG TIN"></div>
+                    </input>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
