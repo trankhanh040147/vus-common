@@ -1,0 +1,1417 @@
+.tab-content>.active {
+  display: block !important;
+}
+
+@media screen and (min-width:767px) {
+
+  .dropdown:hover .dropdown-menu,
+  .dropdown-menu.show {
+    display: block !important;
+  }
+}
+
+.image a[title="Super Summer"],
+.image a[title="digi"] {
+  display: none !important;
+}
+
+@font-face {
+  font-family: 'Averta-Extra-Bold';
+  src: url('https://vus.edu.vn/chuong-trinh-hoc/wp-content/uploads/2023/05/Averta-ExtraBold.woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('https://vus.edu.vn/chuong-trinh-hoc/wp-content/uploads/2023/04/Averta-Regular.woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('https://vus.edu.vn/chuong-trinh-hoc/wp-content/uploads/2023/05/AvertaStdCY-Semibold.woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('https://vus.edu.vn/chuong-trinh-hoc/wp-content/uploads/2023/04/AvertaStdCY-Bold.woff');
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Averta' !important;
+  background: #9edfff !important;
+}
+
+#header {
+  font-family: 'Averta' !important;
+}
+
+.footer .divider {
+  margin: 32px 0;
+  background: #ffbaba;
+  opacity: 1;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+#header {
+  width: 100%;
+}
+
+#navbar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  border-radius: 0px 0px 20px 20px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  height: 80px;
+}
+
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: rgba(0, 0, 0, 0.55);
+  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 1.25rem;
+  --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+  --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+  --bs-navbar-toggler-border-radius: 0.375rem;
+  --bs-navbar-toggler-focus-width: 0.25rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+element.style {}
+
+.me-0 {
+  margin-right: 0 !important;
+}
+
+.navbar-brand {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  font-size: var(--bs-navbar-brand-font-size);
+  color: var(--bs-navbar-brand-color);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+body {
+  background-color: white !important;
+}
+
+.elementor-widget:not(:last-child) {
+  margin-bottom: 0 !important
+}
+
+a {
+  color: #444444 !important;
+  text-decoration: none !important;
+}
+
+.dropdown,
+.dropdown-center,
+.dropend,
+.dropstart,
+.dropup,
+.dropup-center {
+  position: relative;
+}
+
+.btn-hotline button {
+  width: 114px;
+  padding: 3px 7px 3px 40px;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  border: none;
+  background: url(https://vus.edu.vn/wp-content/uploads/2023/05/hotline-phone-number.png) 5px center no-repeat #f80000;
+  background-size: 22px 22px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-hotline .dropdown-menu {
+  height: 200px;
+  top: 53px !important;
+  left: -50px !important;
+  width: 215px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0;
+  box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-menu {
+  --bs-dropdown-zindex: 1000;
+  --bs-dropdown-min-width: 10rem;
+  --bs-dropdown-padding-x: 0;
+  --bs-dropdown-padding-y: 0.5rem;
+  --bs-dropdown-spacer: 0.125rem;
+  --bs-dropdown-font-size: 1rem;
+  --bs-dropdown-color: #212529;
+  --bs-dropdown-bg: #fff;
+  --bs-dropdown-border-color: var(--bs-border-color-translucent);
+  --bs-dropdown-border-radius: 0.375rem;
+  --bs-dropdown-border-width: 1px;
+  --bs-dropdown-inner-border-radius: calc(0.375rem - 1px);
+  --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+  --bs-dropdown-divider-margin-y: 0.5rem;
+  --bs-dropdown-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --bs-dropdown-link-color: #212529;
+  --bs-dropdown-link-hover-color: #1e2125;
+  --bs-dropdown-link-hover-bg: #e9ecef;
+  --bs-dropdown-link-active-color: #fff;
+  --bs-dropdown-link-active-bg: #0d6efd;
+  --bs-dropdown-link-disabled-color: #adb5bd;
+  --bs-dropdown-item-padding-x: 1rem;
+  --bs-dropdown-item-padding-y: 0.25rem;
+  --bs-dropdown-header-color: #6c757d;
+  --bs-dropdown-header-padding-x: 1rem;
+  --bs-dropdown-header-padding-y: 0.5rem;
+  position: absolute;
+  z-index: var(--bs-dropdown-zindex);
+  display: none;
+  min-width: var(--bs-dropdown-min-width);
+  padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+  margin: 0;
+  font-size: var(--bs-dropdown-font-size);
+  color: var(--bs-dropdown-color);
+  text-align: left;
+  list-style: none;
+  background-color: var(--bs-dropdown-bg);
+  background-clip: padding-box;
+  border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+  border-radius: var(--bs-dropdown-border-radius);
+}
+
+.btn-hotline .dropdown-menu .dropdown-title:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.btn-hotline .dropdown-menu .dropdown-title {
+  padding: 13px 17px;
+}
+
+.btn-hotline .dropdown-menu .dropdown-title {
+  text-align: center;
+  color: #3d3d3d;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fff2f2;
+}
+
+.btn-hotline .dropdown-menu .dropdown-tel {
+  background: url(https://vus.edu.vn/wp-content/uploads/2023/05/hotline-phone-number.png) 10px center no-repeat #fff;
+  background-size: 27px;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-hotline .dropdown-menu .dropdown-tel a {
+  color: #b9131a;
+  font-weight: 600;
+}
+
+#menu-home {
+  width: 300px;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+#menu-home>li:hover,
+#menu-home>.current-menu-item {
+  color: #860a0f;
+  border-bottom: 4px solid #f85353;
+}
+
+#menu-home>li {
+  padding: 25px 0;
+}
+
+#menu-home li {
+  position: relative;
+  border-bottom: 4px solid transparent;
+}
+
+#menu-home li a {
+  font-size: 15px;
+  font-weight: 600;
+  display: block;
+}
+
+.header-menu>li.menu-item-has-children,
+#menu-home>li.menu-item-has-children {
+  background: url(https://vus.edu.vn/wp-content/uploads/2023/05/arrow-tab.webp) no-repeat right center;
+  padding-right: 30px;
+}
+
+#menu-home>li+li {
+  margin-left: 30px;
+}
+
+.home-submenu {
+  position: absolute;
+  left: -100px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 20px 60px -20px rgba(135, 135, 135, 0.25);
+  width: 585px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+  overflow: hidden;
+  top: 50px;
+  transition: all 200ms ease-in-out;
+}
+
+.home-submenu .box-flex {
+  padding: 22px 37px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.box-i-flex {
+  flex: 1;
+}
+
+.home-submenu .box-i-flex {
+  text-align: left;
+  max-width: 240px;
+}
+
+.home-submenu .title-tech {
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/mega_ic2.png) 16px 7px no-repeat #f2e1ff;
+  background-size: 21px;
+  padding-left: 40px;
+}
+
+.home-submenu ul.submenu {
+  margin: 0;
+  padding: 0;
+}
+
+#menu-home .home-submenu ul.submenu li {
+  margin-top: 15px;
+}
+
+#menu-home .home-submenu ul.submenu li a {
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.28px;
+}
+
+.home-submenu .image {
+  margin-top: 15px;
+}
+
+#menu-home li a {
+  font-size: clamp(12px, 1.1vw, 15px);
+  font-weight: 600;
+  display: block;
+}
+
+.home-submenu .title-school {
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/mega_ic3.png) 16px 6px no-repeat #d4f0ff;
+  background-size: 16px;
+  padding-left: 30px;
+  margin-top: 15px;
+}
+
+.home-submenu .title {
+  color: #004b97;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 10px;
+  padding-left: 35px;
+}
+
+.home-submenu .title-en {
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/mega_ic1.png) 16px 5px no-repeat #ffdcdd;
+  background-size: 20px;
+  padding-left: 45px;
+}
+
+.home-submenu .title-brain {
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/mega_ic4.png) 16px 8px no-repeat #fffae0;
+  background-size: 20px;
+  margin-top: 15px;
+  padding-left: 40px;
+}
+
+ul {
+  list-style: none !important;
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--bs-navbar-color);
+  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+  display: flex;
+
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.home-submenu .box-flex:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #eaeaea;
+  position: absolute;
+  left: 285px;
+  top: 0;
+}
+
+.header-menu>li {
+  position: relative;
+  padding: 25px 0;
+  border-bottom: 4px solid transparent;
+}
+
+.header-menu>li {
+  margin-left: 30px;
+}
+
+.header-menu li a {
+  font-size: clamp(12px, 1.1vw, 15px);
+  font-weight: 600;
+}
+
+.header-menu>li>ul.sub-menu {
+  opacity: 0;
+  visibility: hidden;
+  top: 50px;
+  position: absolute;
+  background: #fff;
+  min-width: 230px;
+  margin-left: 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+}
+
+.header-menu>li>ul.sub-menu li {
+  position: relative;
+  line-height: 1.3rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  padding-top: 18px;
+  display: block;
+  width: 100%;
+}
+
+.btn-hotline .dropdown-toggle::after {
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/ic-arrow-down-w.png) right center no-repeat;
+  border: none;
+  width: 19px;
+  height: 20px;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+
+.header-menu>li.menu-item-has-children,
+#menu-home>li.menu-item-has-children {
+  background: url(https://vus.edu.vn/wp-content/uploads/2023/05/arrow-tab.webp) no-repeat right center;
+  padding-right: 30px !important;
+}
+
+#menu-home>li:hover .home-submenu {
+  top: 83px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.home-submenu .box-flex {
+  padding: 22px 37px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.box-flex {
+  display: flex;
+}
+
+.header-menu>li:hover>ul.sub-menu {
+  top: 83px;
+}
+
+.header-menu>li:hover ul.sub-menu {
+  display: block;
+  position: absolute;
+  background: #fff;
+  left: -25px;
+  min-width: 350px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 60px -20px rgba(135, 135, 135, 0.25);
+  padding: 22px 37px;
+}
+
+.header-menu>li:hover ul li ul,
+.header-menu>li:hover>ul.sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-menu>li:hover,
+.header-menu>.current-menu-item {
+  color: #860a0f;
+  border-bottom: 4px solid #f85353;
+  padding: 25px 0;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+  display: flex;
+  flex-wrap: initial;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav {
+  justify-content: end;
+}
+
+.footer {
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-bg.png) no-repeat center top;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 10;
+  margin-top: -50px;
+}
+
+.floating-menu {
+  position: fixed;
+  right: 38px;
+  bottom: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+
+.floating-menu .icon-messenger {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.floating-menu img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-inner {
+  position: relative;
+  padding-top: 80px;
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-bg-bottom.png) no-repeat center bottom;
+  background-size: contain;
+  z-index: 3;
+}
+
+.footer-content {
+  padding-bottom: 25px;
+}
+
+.footer-content .pc-row {
+  padding-bottom: 60px;
+}
+
+.nav-pills {
+  --bs-nav-pills-border-radius: 0.375rem;
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-bg: #0d6efd;
+}
+
+.nav {
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-hover-color: var(--bs-link-hover-color);
+  --bs-nav-link-disabled-color: #6c757d;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.fmenu-line .nav-link.active {
+  background-color: transparent;
+}
+
+.nav-pills .nav-link {
+  display: flex;
+  background: 0 0;
+  border: 0;
+  border-radius: var(--bs-nav-pills-border-radius);
+}
+
+.fmenu-line>button {
+  padding-bottom: 96px;
+  letter-spacing: -0.32px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 44px;
+  padding: 0 0 96px 44px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.fmenu-line .nav-link.active span {
+  background: #D4F0FF;
+  border-radius: 10px;
+  color: #004B97;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.fmenu-line>.active:first-child:after {
+  top: 15px;
+}
+
+.fmenu-line>button:after {
+  content: "";
+  width: 2px;
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+
+.tab-content>.active {
+  display: block;
+}
+
+.tab-content>.tab-pane {
+  display: none;
+}
+
+.fade {
+  transition: opacity .15s linear;
+}
+
+.fmenu-list {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.fmenu-list-2 {
+  padding-top: 100px;
+  justify-content: left;
+}
+
+.fmenu-list-3 {
+  padding-top: 218px;
+  justify-content: left;
+}
+
+.fmenu-list>ul {
+  width: 300px;
+  padding: 0;
+  margin: 38px 0 0;
+  position: relative;
+}
+
+.fmenu-list>ul>li {
+  color: #FFF;
+}
+
+.fmenu-list>ul>li>.title {
+  color: #c6ebff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  display: block;
+  padding: 5px 0 5px 50px;
+  margin-bottom: 0;
+}
+
+.fmenu-list>ul>li>.title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 34px;
+  height: 34px;
+}
+
+.fmenu-1 .title:before {
+  background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-ic-1.png);
+}
+
+.fmenu-list .sub-menu {
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+  margin-top: 10px;
+}
+
+ul {
+  margin-left: 15px;
+}
+
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+
+.fmenu-list>ul>li a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+}
+
+.footer a {
+  color: #fff !important;
+}
+
+ul li {
+  line-height: 1.7rem;
+}
+
+.fmenu-list .sub-menu li {
+  list-style: disc;
+}
+
+.tab-content>.tab-pane {
+  display: none;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.f-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+
+.f-social {
+  margin: 15px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+}
+
+.f-social li {
+  list-style: none;
+}
+
+.footer-content .text-right {
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  line-height: 120%;
+}
+
+#menu-mobile {
+  position: fixed;
+  z-index: 999;
+  display: none;
+  width: 100%;
+  bottom: 20px;
+  left: 0;
+}
+
+.show-on-mobile {
+  display: none !important;
+}
+
+@media screen and (max-width:767px) {
+  .show-on-mobile {
+    display: block !important;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+.fmenu-line>.active:before {
+  background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-active.png);
+  width: 25px;
+  height: 25px;
+}
+
+.fmenu-line .nav-link.active {
+  background-color: transparent !important;
+}
+
+.fmenu-line .nav-link span {
+  padding: 12px 22px 11px;
+}
+
+
+
+.fmenu-line>button:first-child:not(.active)::before {
+  top: 0;
+}
+
+.fmenu-line>button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-cirle.png) left center no-repeat;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  top: 3px;
+}
+
+.fmenu-line>button:first-child:not(.active)::before {
+  top: 0;
+}
+
+@media screen and (max-width:767px) {
+  .fmenu-line h4 {
+    padding-left: 45px !important;
+  }
+
+  ol,
+  ul {
+    padding-left: 0px !important;
+    margin-left: 0 !important;
+
+  }
+
+  .fmenu-mobile-line {
+    padding-left: 50px;
+    position: relative;
+  }
+
+  .fmenu-mobile-line>li.current-menu-item:before {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-active.png);
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    left: -45px;
+  }
+
+  .fmenu-mobile-line>li:before {
+    content: "";
+    position: absolute;
+    left: -43px;
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-cirle.png) left center no-repeat;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+
+  }
+
+  .fmenu-mobile-line {
+    padding-left: 50px !important;
+    position: relative;
+  }
+
+  .fmenu-mobile-line::before {
+    content: "";
+    top: 10px;
+    bottom: 60px;
+    left: 16px;
+    border-left: 1px solid #fff;
+    width: 1px;
+    position: absolute;
+  }
+
+  .footer-content .text-right {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .fmenu-mobile-line>li:before {
+    content: "";
+    position: absolute;
+    left: -43px;
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-cirle.png) left center no-repeat;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+
+  }
+
+  .fmenu-mobile-line>li.current-menu-item:before {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-active.png);
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    left: -45px;
+  }
+
+  .fmenu-line .menu-item-arrow .sub-menu {
+    display: none;
+  }
+
+  .fmenu-mobile-line h3,
+  .fmenu-mobile-line .menu-item-lv1 {
+    color: #FFCFCF !important;
+    font-size: 16px;
+
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+  }
+
+  .fmenu-line .menu-item-arrow {
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/ic-down.png) 95% 0 no-repeat;
+  }
+
+  .fmenu-line>li {
+    padding-bottom: 45px !important;
+  }
+
+  .fmenu-mobile-line>li.current-menu-item h3 {
+    color: #004B97 !important;
+    border-radius: 10px;
+    display: inline-flex;
+    background: #D4F0FF;
+    padding: 12px 24px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.25);
+  }
+
+  .floating-menu img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sub-menu {
+    padding-left: 45px !important;
+  }
+}
+
+.fmenu-line h4 {
+  color: #c6ebff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.36px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 5px 0 5px 45px;
+}
+
+.fmenu-cate>li>ul.sub-menu {
+  margin-left: 0;
+  padding-left: 55px;
+}
+
+.fmenu-cate>li {
+  list-style: none;
+}
+
+.fmenu-line .menu-item-arrow li,
+.fmenu-cate>li>ul.sub-menu li {
+  list-style: disc;
+}
+
+.fmenu-line a {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.fmenu-line .menu-item-arrow {
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/ic-down.png) 95% 0 no-repeat;
+}
+
+.fmenu-1 .title:before {
+  background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-ic-1.png);
+}
+
+
+
+.sub-menu-sp-2 {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.fmenu-mobile-line>li:before {
+  content: "";
+  position: absolute;
+  left: 6px !important;
+  background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-cirle.png) left center no-repeat;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+
+}
+
+.fmenu-cate>li>ul.sub-menu {
+  padding-left: 55px !important;
+  margin-left: 0;
+}
+
+.fmenu-4 .title:before {
+  background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-ic-4.png);
+}
+
+.fmenu-line h4:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 34px;
+  height: 34px;
+}
+
+.fmenu-1 .title:before {
+  background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-ic-1.png);
+}
+
+.fmenu-2 .title:before {
+  background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-ic-2.png);
+}
+
+.fmenu-3 .title:before {
+  background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-ic-3.png);
+}
+
+.fmenu-4 .title:before {
+  background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/f-ic-4.png);
+}
+
+#menu-mobile {
+  position: fixed;
+  z-index: 999;
+  display: none;
+  width: 100%;
+  bottom: 20px;
+  left: 0;
+}
+
+@media screen and (max-width:992px) {
+  #menu-mobile {
+    display: block;
+  }
+
+  #menu-mobile>.inner {
+    border-radius: 100px;
+    background: #fff;
+    /* box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.25); */
+    padding: 10px 25px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .menu-mobile-overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255 255 255 / 0.2);
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .menu-mobile ul,
+  .menu-mobile {
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-mobile>li {
+    text-align: center;
+  }
+
+  .menu-mobile .current-menu-item>a {
+    color: #b9131a;
+  }
+
+  .menu-mobile .current-menu-item .ico-home {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-1-active.png);
+  }
+
+  .menu-mobile .ico-home {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-1.png);
+  }
+
+  .menu-mobile .icon {
+    width: 42px;
+    height: 36px;
+    display: block;
+  }
+
+  .menu-mobile>li>a {
+    color: #5a7693;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .menu-mobile .ico-program {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-2.png);
+  }
+
+  .menu-mobile .current-menu-item .ico-program {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-2-active.png);
+  }
+
+  .menu-over {
+    position: absolute;
+    left: -5px;
+    bottom: 65px;
+    transition: all 200ms ease-in-out;
+    display: none;
+    width: 100%;
+  }
+
+  .js-fmenu.active .sub-menu.sub-menu-sp-2 {
+    display: block !important;
+  }
+
+  .menu-mobile .current-menu-item .menu-over {
+    display: block !important;
+  }
+
+  .menu-over>.inner {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .menu-over .top-title {
+    background-color: #e31820;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .menu-mobile .top-desc {
+    color: #004b97;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.24px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  .vus-form .form-label {
+    font-size: 12px;
+  }
+
+  .vus-form .form-label {
+    color: #3f3f3f;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.28px;
+  }
+
+  .form-label {
+    margin-bottom: .5rem;
+  }
+
+
+  .vus-form .form-control {
+    background: none;
+    padding: 0;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .menu-over .scrolling-y {
+    transition: all 200ms ease-in-out;
+    height: 430px;
+    overflow-y: scroll;
+    touch-action: pan-y;
+  }
+
+  .menu-mobile li,
+  .menu-mobile .submenu li {
+    list-style: none;
+  }
+
+  ul li {
+    line-height: 1.7rem;
+  }
+
+  .menu-over .title-en {
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/mega_ic1.png) 30px center no-repeat #ffdcdd;
+    background-size: 20px;
+    padding-left: 60px;
+  }
+
+  .menu-over .title {
+    padding: 15px;
+    color: #004b97;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .menu-over .submenu {
+    text-align: left;
+    width: 100%;
+    display: block;
+  }
+
+  .menu-over .submenu .submenu {
+    margin-top: 20px;
+  }
+
+  .menu-mobile ul,
+  .menu-mobile {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu-over .submenu .submenu li {
+    padding: 0 30px;
+  }
+
+  .menu-over .submenu .submenu li a {
+    padding: 12px 0;
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/ic-arrow-menu-sp.png) right center no-repeat;
+    border-bottom: 1px solid #ececec;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.28px;
+  }
+
+  .menu-mobile .current-menu-item .ico-advise {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-3-active.png);
+  }
+
+  .menu-mobile .ico-advise {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-3.png);
+  }
+
+  .menu-mobile .current-menu-item .ico-home {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-1-active.png);
+  }
+
+  .menu-mobile .ico-home {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-1.png);
+  }
+
+  .menu-mobile .current-menu-item .ico-other {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-4-active.png);
+  }
+
+  .menu-mobile .ico-other {
+    background-image: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/menu-m-4.png);
+  }
+
+  .menu-over .title-tech {
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/mega_ic2.png) 30px center no-repeat #f2e1ff;
+    background-size: 21px;
+    padding-left: 60px;
+  }
+
+  .menu-over .title {
+    padding: 15px;
+    color: #004b97;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 60px;
+  }
+
+  .image img {
+    margin: 20px 0 20px 30px;
+  }
+
+  .menu-over .title-school {
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/mega_ic3.png) 30px center no-repeat #d4f0ff;
+    background-size: 16px;
+    padding-left: 60px;
+  }
+
+  .menu-over .title-brain {
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/mega_ic4.png) 30px center no-repeat #fffae0;
+    background-size: 20px;
+    padding-left: 60px;
+  }
+
+  .menu-over-form .vus-form .form-input {
+    background: #f1f1f1;
+  }
+
+  .vus-form .form-input {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 13px 20px;
+  }
+
+
+
+  .menu-mobile .vus-form .form-label {
+    text-align: left;
+  }
+
+  .contact-text-warning {
+    color: #004B97;
+    text-align: center;
+    font-family: "Averta PE";
+    font-size: 12px;
+    padding: 5px 15px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.24px;
+  }
+
+  .vus-form .form-submit .wpcf7-submit {
+    background: url(https://vus.edu.vn/wp-content/themes/proapp/vus/assets/images/cf7-submit.png) left center no-repeat;
+    background-size: 230px;
+    width: 230px;
+    height: 58px;
+    border: none;
+    text-indent: -9999px;
+    margin: auto;
+    display: inherit;
+  }
+
+  #__section-form {
+    height: 1020px;
+  }
+}
+
+.header-menu>li {
+  white-space: nowrap
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    width: 89%;
+  }
+}
