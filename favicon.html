@@ -1,0 +1,16 @@
+<script>
+    // Create the link element
+    var linkTag = document.createElement("link");
+    linkTag.rel = "shortcut icon";
+    linkTag.type = "image/png";
+    linkTag.href = "https://vus.edu.vn/wp-content/themes/proapp/favicon.png?v=1.2";
+
+    // Get the <head> element
+    var headElement = document.querySelector("head");
+
+    // Get the <title> element
+    var titleElement = document.querySelector("title");
+
+    // Insert the link tag before the <title> element
+    headElement.insertBefore(linkTag, titleElement);
+</script>>

@@ -1,12 +1,12 @@
 
 
 var datas;
-$.getJSON('file.json', function (data) {
+$.getJSON('city-mapping.json', function (data) {
   datas = data;
 });
 
 // Lưu trữ các phần tử DOM được sử dụng nhiều lần
-var $frmCity = $('#__frm_city');
+var $frmCity = $('.__frm_city');
 var $district = $('#district');
 var $ward = $('#ward');
 
@@ -51,6 +51,7 @@ function addOptions($select, options) {
   });
   console.log($district.val())
 }
+
 // Bắt sự kiện khi người dùng chọn thành phố
 $frmCity.change(function () {
   $ward.empty();
